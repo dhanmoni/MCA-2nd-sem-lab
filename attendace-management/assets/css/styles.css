@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --third-color: #15172b;
+    --input-color: #303245;
+    --btn-color: #08d;
+}
+.color{
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --third-color: #e3e4f3;
+    --input-color: #ffffff;
+}
+body{
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+table{
+    color: #ffffff;
+}
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 10%;
+    /* border-bottom: 1px solid var(--secondary-color); */
+}
+.page-title{
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+    padding: 10px 0;
+}
+#clicked{
+    color: var(--secondary-color);
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+main{
+    display: flex;
+    height: 90%;
+}
+.left{
+    border-right: 1px solid var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+.btns{
+    color: var(--secondary-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 15px 30px;
+}
+.first{
+    background-color: var(--btn-color);
+}
+
+
+.right{
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form {
+    background-color: var(--third-color);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 40%;
+    text-align: left;
+}
+.form-title{
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.lbl{
+    font-size: 1.2rem;
+}
+.drop-down-select{
+    margin: 20px 0;
+}
+.select-item{
+    width: 38%;
+    height: 25px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+label{
+    font-size: 1.2rem;
+}
+input {
+    background-color: var(--input-color);
+    border-radius: 12px;
+    border: 0;
+    color: var(--secondary-color);
+    font-size: 18px;
+    height: 30px;
+    padding: 4px 20px 0;
+    margin: 10px 3px;
+    width: 100%;
+    text-transform: uppercase;
+}
+input[type=submit]
+{
+    background-color: #08d;
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    width: 50%;
+    height: 60px;
+}
+
+.radio-select{
+    display: flex;
+    margin: 12px 0;
+}
+.radio-select p{
+    font-size: 1.2rem;
+}
+.rad{
+    width: 15px;
+    height: 22px;
+    margin: 0 16px;
+}
+.buttons{
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.down-btn{
+    background-color: #08d;
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+.down-btn:active {
+    background-color: #06b;
+}
+
+
+.formcourse{
+    display: none;
+}
+.formsubject{
+    display: none;
+}
+.formteacher{
+    display: none;
+}
+.formstudent{
+    display: none;
+}
+.formattendence{
+    display: none;
+}
+.formview
+{
+    display: none;
+}
+
+
+
+.activate{
+    display: block;
+}
+
+.deactivate{
+    display: none;
+}
+.button-activate{
+    background-color: var(--btn-color);
+}
+
+.button-deactivate{
+    background-color: var(--primary-color);
+}

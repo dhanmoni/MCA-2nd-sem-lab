@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>        
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: linear-gradient(90deg, rgba(97,180,58,1) 0%, rgba(69,193,252,1) 100%);
+        }
+
+        #signup {
+            max-width: 400px;
+            background: #F9F9F9;
+            padding: 25px;
+            margin: 100px auto 0;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+            border: 1px solid #ccc;
+            background: #FFF;
+            margin:0 0 5px;
+            padding: 15px;
+            width: calc(100% - 30px);
+        }
+
+        textarea {
+            height: 100px;
+            max-width: 100%;
+            resize: none;
+        }
+
+        button[type="submit"] {
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            background: #4CAF50;
+            color: #FFF;
+            margin: 0 0 5px;
+            padding: 10px;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="signup">
+        <h3>Sign Up Form</h3>
+        <input placeholder="Your name" type="text" required>
+        <input placeholder="Your Email Address" type="email" required>          
+        <input placeholder="Password" type="password" required>          
+        <input placeholder="Your Phone Number (optional)" type="tel" required>          
+        <input placeholder="Your Web Site (optional)" type="url" required>
+        <textarea placeholder="Type your message here...." required></textarea>
+        <button name="submit" type="submit" >Submit</button>
+    </form>
+</body>
+</html>

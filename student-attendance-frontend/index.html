@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        Student Attendance System
+    </nav>
+    <main>
+        <div class="sidebar">
+        <ul>
+            <li id="student-form-btn">Student Form</li>
+            <li id="teacher-form-btn">Teacher Form</li>
+            <li id="dept-form-btn">Department Form</li>    
+            <li id="sub-form-btn">Subject Form</li>
+        </ul>
+    </div>
+    <div class="main-forms">
+
+        <form id="student-form">
+            <label for="s_name">Student Name:</label> 
+            <input placeholder="Student name" name="s_name" type="text" required>
+            <!-- <input placeholder="Roll No" name="s_roll" type="text" required>                    -->
+            <!-- <input placeholder="Department" name="s_dept" type="text" required>  -->
+            <label for="dept">Choose department:</label>
+            <select name="dept" id="dept">
+            <option value="MCA">MCA</option>
+            <option value="ECE">ECE</option>
+            <option value="CSE">CSE</option>
+            </select>                  
+            <br/>
+            <label for="s_sem">Choose Semster:</label>
+            <select name="s_sem" id="s_sem">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            </select>                  
+            <br/>
+            <label for="s_admyr">Admission year:</label> 
+            <input placeholder="Admission Date" name="s_admyr" type="date" required> 
+            <br/>
+            <label for="s_dob">Date of birth:</label> 
+            <input placeholder="DOB" name="s_dob" type="date" required>  
+            <br/>
+            <label for="s_gender">Gender:</label> 
+            <input type="radio" id="male" name="s_gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="s_gender" value="Female">
+            <label for="female">Female</label><br>             
+            <button name="submit" type="submit" >Submit</button>
+            <button id="clear-btn">Clear form</button>
+        </form>
+        <form id="teacher-form">
+            <label for="t_name">Teacher Name:</label>
+            <input placeholder="Teacher name" name="t_name" type="text" required>
+            <label for="t_desgination">Designation:</label>
+            <input placeholder="Designation" name="t_desgination" type="text" required>  
+            <label for="dept">Choose department:</label>
+            <select name="dept" id="dept">
+            <option value="MCA">MCA</option>
+            <option value="ECE">ECE</option>
+            <option value="CSE">CSE</option>
+            </select>                  
+            <br/> 
+            <span>Gender:</span>
+            <input type="radio" id="male" name="t_gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="t_gender" value="Female">
+            <label for="female">Female</label><br>                                     
+            <button name="submit" type="submit" >Submit</button>
+            <button id="clear-btn">Clear form</button>
+        </form>
+        <form id="dept-form">
+            <input placeholder="Department name" name="dept_name" type="text" required>                                    
+            <button name="submit" type="submit" >Submit</button>
+            <button id="clear-btn">Clear form</button>
+        </form>
+        <form id="subject-form">
+            <input placeholder="Subject name" name="sub_name" type="text" required>
+            <input placeholder="Subject Code" name="sub_code" type="text" required>                                     
+            <label for="sub_sem">Choose Semster:</label>
+            <select name="sub_sem" id="sub_sem">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            </select>                  
+            <br/>                                    
+            <button name="submit" type="submit" >Submit</button>
+            <button id="clear-btn">Clear form</button>
+        </form>
+    </div>
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

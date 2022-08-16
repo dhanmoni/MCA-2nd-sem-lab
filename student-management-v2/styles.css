@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #fff;
+    --secondary-color: #fff;
+    --third-color: #e3e4f3;
+    --input-color: #303245;
+    --btn-color: #08d;
+}
+.color{
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --third-color: #e3e4f3;
+    --input-color: #ffffff;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(90deg, rgba(15, 139, 228, 0.64) 0%, rgba(69,193,252,1) 100%);
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 10%;
+}
+.page-title{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+}
+.btns{
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.first{
+    background-color: var(--btn-color);
+}
+
+.right{
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 70%;
+    text-align: left;
+    background-color: aliceblue;
+}
+.form-title{
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.lbl{
+    font-size: 1.2rem;
+}
+.drop-down-select{
+    margin: 20px 0;
+}
+.select-item{
+    width: 38%;
+    height: 25px;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+label{
+    font-size: 1.2rem;
+}
+input {
+    
+    border-radius: 12px;
+    border: 0;
+    color: #333;
+    font-size: 18px;
+    height: 30px;
+    padding: 4px 20px 0;
+    margin: 10px 3px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.radio-select{
+    display: flex;
+    margin: 12px 0;
+}
+.radio-select p{
+    font-size: 1.2rem;
+}
+.rad{
+    width: 15px;
+    height: 22px;
+    margin: 0 16px;
+}
+.buttons{
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.down-btn{
+    background-color: #08d;
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+.down-btn:active {
+    background-color: #06b;
+}
+
+
+.formcourse{
+    display: none;
+}
+.formsubject{
+    display: none;
+}
+.formteacher{
+    display: none;
+}
+.formstudent{
+    display: none;
+}
+.formattendence{
+    display: none;
+}
+
+
+
+.activate{
+    display: block;
+}
+
+.deactivate{
+    display: none;
+}
+.button-activate{
+    background-color: var(--btn-color);
+    box-shadow: 6px 6px 31px -10px rgba(227, 227, 228, 0.75);
+}
+
+.button-deactivate{
+    background-color: #fff;
+    box-shadow: none;
+}

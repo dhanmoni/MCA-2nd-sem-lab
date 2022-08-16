@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navList{
+            display: none;
+        }
+
+        .navList.shown{
+            display: block;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="menu">
+        <button>
+            <h1>Menu</h1>
+        </button>
+
+        <ul class="navList">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+        
+    </div>
+    <script>
+        let hiddenList= document.querySelector('.navList');
+        let button= document.querySelector('button');
+        button.addEventListener('click', function(){
+            hiddenList.classList.toggle('shown')
+        })
+    </script>
+</body>
+</html>

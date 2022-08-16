@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            padding: 20px;
+            background-color: cornflowerblue;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer {
+            padding: 20px;
+            background-color: darkolivegreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ul {
+            text-decoration: none;
+            padding: 20px
+        }
+        li {
+            display: inline;
+            padding: 20px;
+            cursor: pointer;
+        }
+        li:hover{
+            background-color: gray;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: calc(100vh - 176px)
+        }
+        section {
+            height: 100%;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid red
+        }
+        .left-section, .right-section {
+            width: 33%;
+            background-color: cornflowerblue;
+        }
+        .main-section {
+            width: 66%
+        }
+    </style>
+</head>
+<body>
+    <header >
+        My Website
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <main>
+        <section class="left-section">
+            Left
+        </section>
+        <section class="main-section">
+            Main
+        </section>
+        <section class="right-section">
+            Right
+        </section>
+    </main>
+    <footer>
+        Copyright 2022
+    </footer>
+</body>
+</html>

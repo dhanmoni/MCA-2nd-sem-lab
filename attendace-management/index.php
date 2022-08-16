@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attendence Management System</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <p class="page-title">Attendence Management System</p>
+
+        <p id="clicked">&#9728;</p>
+    </header>
+    <main>
+        <div class="left">
+            <ul>
+                <li class="btns first" id="department">Department</li>
+                <li class="btns" id="course">Course</li>
+                <li class="btns" id="subject">Subject</li>
+                <li class="btns" id="teacher">Teacher</li>
+                <li class="btns" id="student">Student</li>
+                <li class="btns" id="attendence">Attendence</li>
+                <li class="btns" id="view">View</li>
+              </ul>
+        </div>
+        <div class="right">
+
+
+            <form class="formdepartment">
+                <p class="form-title">Department</p>
+                <!-- <div class="drop-down-select">
+                    <label class="lbl" for="dprt">Choose Department:</label>
+                    <select class="select-item" id="dprt" name="department">
+                      <option value="dflt">Select a Department</option>
+                      <option value="ce">Civil Engineering</option>
+                      <option value="me">Mechanical Engineering</option>
+                      <option value="ee">Electrical Engineering</option>
+                      <option value="ete">Electronics & Telecommunication Engineering</option>
+                      <option value="cse">Computer Science & Engineering</option>
+                      <option value="che">Chemical Engineering</option>
+                      <option value="ipe">Industrial & Production Engineering</option>
+                      <option value="ie">Instrumentation Engineering</option>
+                      <option value="ca">Computer Applications</option>
+                    </select>
+                  </div> -->
+                <label for="date">Department Name:</label>
+                <input type="text" id="dname">
+                  <div class="buttons">
+                    <button class="down-btn" type="reset" id="reset">Reset</button>
+                    <button class="down-btn" id="submit">Submit</button>
+                  </div>
+              </form>
+    
+            <form class="formcourse">
+                <p class="form-title">Course</p>
+                <!-- <div class="drop-down-select">
+                    <label class="lbl" for="course">Choose Course:</label>
+                    <select class="select-item" id="course" name="course">
+                        <option value="dflt">Select a Course</option>
+                        <option value="bt">B Tech</option>
+                        <option value="mt">M Tech</option>
+                        <option value="mca">MCA</option>
+                    </select>
+                  </div> -->
+                  <label for="date">Course Name:</label>
+                  <input type="text" id="cname">
+                  <div class="buttons">
+                    <button class="down-btn" type="reset" id="reset">Reset</button>
+                    <button class="down-btn" id="submit">Submit</button>
+                  </div>
+              </form>
+    
+              <form class="formsubject">
+                <p class="form-title">Subject</p>
+                <label for="subname">Subject Name:</label>
+                <input  type="text" id="subname" />
+                <div class="drop-down-select">
+                  <label class="lbl" for="dprt">Choose Department:</label>
+                  <select class="select-item" id="dprt" name="dprt">
+                    <option value="dflt">Select a Department</option>
+                    <option value="ce">Civil Engineering</option>
+                    <option value="me">Mechanical Engineering</option>
+                    <option value="ee">Electrical Engineering</option>
+                    <option value="ete">Electronics & Telecommunication Engineering</option>
+                    <option value="cse">Computer Science & Engineering</option>
+                    <option value="che">Chemical Engineering</option>
+                    <option value="ipe">Industrial & Production Engineering</option>
+                    <option value="ie">Instrumentation Engineering</option>
+                    <option value="ca">Computer Applications</option>
+                  </select>
+                </div>
+                <div class="drop-down-select">
+                  <label class="lbl" for="course">Choose Course:</label>
+                  <select class="select-item" id="course" name="course">
+                      <option value="dflt">Select a Course</option>
+                      <option value="bt">B Tech</option>
+                      <option value="mt">M Tech</option>
+                      <option value="mca">MCA</option>
+                  </select>
+                </div>
+                <div class="drop-down-select">
+                  <label class="lbl" for="sem">Choose Semester:</label>
+                  <select class="select-item" id="sem" name="semester">
+                    <option value="dflt">Select a Semester</option>
+                    <option value="first">I</option>
+                    <option value="second">II</option>
+                    <option value="third">III</option>
+                    <option value="fourth">IV</option>
+                    <option value="fifth">V</option>
+                    <option value="sixth">VI</option>
+                    <option value="seventh">VII</option>
+                    <option value="eighth">VIII</option>
+                  </select>
+                </div>
+                <div class="buttons">
+                    <button class="down-btn" type="reset" id="reset">Reset</button>
+                    <button class="down-btn" id="submit">Submit</button>
+                  </div>
+              </form>
+    
+    
+              <form class="formteacher">
+                <p class="form-title">Teacher</p>
+                <label for="tname">Name:</label>
+                <input  type="text" id="tname" />
+                <div class="drop-down-select">
+                    <label class="lbl" for="dprt">Choose Department:</label>
+                    <select class="select-item" id="dprt" name="dprt">
+                      <option value="dflt">Select a Department</option>
+                      <option value="ce">Civil Engineering</option>
+                      <option value="me">Mechanical Engineering</option>
+                      <option value="ee">Electrical Engineering</option>
+                      <option value="ete">Electronics & Telecommunication Engineering</option>
+                      <option value="cse">Computer Science & Engineering</option>
+                      <option value="che">Chemical Engineering</option>
+                      <option value="ipe">Industrial & Production Engineering</option>
+                      <option value="ie">Instrumentation Engineering</option>
+                      <option value="ca">Computer Applications</option>
+                    </select>
+                  </div>
+                <div class="radio-select">
+                  <p>Choose Gender:</p>
+                  <input   class="rad" type="radio" id="gender1" name="gender" value="Male"/>
+                  <label for="male">Male</label>
+                  <input  class="rad" type="radio" id="gender2" name="gender" value="Female"/>
+                  <label for="gender2">Female</label>
+                </div>
+                <div class="buttons">
+                    <button class="down-btn" type="reset" id="reset">Reset</button>
+                    <button class="down-btn" id="submit">Submit</button>
+                  </div>
+              </form>
+    
+    
+              <form class="formstudent" method="POST" action="assets/insert.php">
+                <p class="form-title">Student</p>
+                <label for="sname">Name:</label>
+                <input  type="text" id="sname" name="sname" required />
+                <br>
+                <label for="dob">Date of Birth:</label>
+                <input  type="date" id="dob" name="dob" required/>
+    
+                <div class="drop-down-select">
+                  <label class="lbl" for="gender">Choose Gender:</label>
+                  <select class="select-item" id="gender" name="gender" required>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="drop-down-select">
+                    <label class="lbl" for="course">Choose Course:</label>
+                    <select class="select-item" id="course" name="course" required>
+                        <option value="btech">B Tech</option>
+                        <option value="mtech">M Tech</option>
+                        <option value="mca">MCA</option>
+                    </select>
+                  </div>
+                  <div class="drop-down-select">
+                    <label class="lbl" for="dprt">Choose Branch:</label>
+                    <select class="select-item" id="dprt" name="dprt" required>
+                      <option value="ce">Civil Engineering</option>
+                      <option value="me">Mechanical Engineering</option>
+                      <option value="ee">Electrical Engineering</option>
+                      <option value="ete">Electronics & Telecommunication Engineering</option>
+                      <option value="cse">Computer Science & Engineering</option>
+                      <option value="che">Chemical Engineering</option>
+                      <option value="ipe">Industrial & Production Engineering</option>
+                      <option value="ie">Instrumentation Engineering</option>
+                      <option value="ca">Computer Applications</option>
+                    </select>
+                  </div>
+    
+                <div class="drop-down-select">
+                  <label class="lbl" for="sem">Choose semester:</label>
+                  <select class="select-item" id="sem" name="sem" required>
+                    <option value="dflt">Select a Semester</option>
+                    <option value="first">I</option>
+                    <option value="second">II</option>
+                    <option value="third">III</option>
+                    <option value="fourth">IV</option>
+                    <option value="fifth">V</option>
+                    <option value="sixth">VI</option>
+                    <option value="seventh">VII</option>
+                    <option value="eighth">VIII</option>
+                  </select>
+                </div>
+
+                <label for="stime">Session:</label>
+                <input  type="text" id="stime" name="stime" required/>
+
+                <div class="buttons">
+                    <button class="down-btn" type="reset" id="reset">Reset</button>
+                    <input type="submit" value="Submit" class="down-btn">
+                  </div>
+              </form>
+              
+              
+            <form class="formattendence">
+                <p class="form-title">Attendence</p>
+                <label for="date">Date:</label>
+                <input  type="date" id="date" />
+                <label for="sname">Student Name:</label>
+                <input  type="text" id="sname" />
+                <label for="tname">Teacher Name:</label>
+                <input  type="text" id="tname" />
+                <label for="subname">Subject Name:</label>
+                <input  type="text" id="subname" />
+
+                <div class="drop-down-select">
+                    <label class="lbl" for="sem">Semester:</label>
+                    <select class="select-item" id="sem" name="semester">
+                      <option value="dflt">Select a Semester</option>
+                      <option value="first">I</option>
+                      <option value="second">II</option>
+                      <option value="third">III</option>
+                      <option value="fourth">IV</option>
+                      <option value="fifth">V</option>
+                      <option value="sixth">VI</option>
+                      <option value="seventh">VII</option>
+                      <option value="eighth">VIII</option>
+                    </select>
+                </div>
+                
+                <div class="radio-select">
+                    <p>Attendence:</p>
+                    <input   class="rad" type="radio" id="yes" name="y" value="Yes"/>
+                    <label for="male">Yes</label>
+                    <input  class="rad" type="radio" id="no" name="n" value="No"/>
+                    <label for="gender2">No</label>
+                  </div>
+
+
+                <div class="buttons">
+                  <button class="down-btn" type="reset" id="reset">Reset</button>
+                  <button class="down-btn" id="submit">Submit</button>
+                </div>
+            </form>
+            <form class="formview">
+            <td>Student Database</td>
+         <table">
+            <th> Name</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                     <th>Course</th>
+                    <th>Department</th>
+                    <th>Semester</th>
+                    <th>Session</th>
+
+            </tr>
+              
+              </form>
+    
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
